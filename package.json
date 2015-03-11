@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/emartech/boar-stack-mocks",
   "dependencies": {
-    "boar-stack": "0.1.0",
-    "lodash": "3.3.1",
-    "sinon": "1.12.2"
+    "boar-stack": "0.2.1",
+    "lodash": "3.5.1",
+    "sinon": "1.13.0"
   }
 }
