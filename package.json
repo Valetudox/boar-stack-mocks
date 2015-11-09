@@ -1,6 +1,6 @@
 {
   "name": "boar-server-mocks",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
