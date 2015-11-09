@@ -1,5 +1,5 @@
 {
-  "name": "boar-stack-mocks",
+  "name": "boar-server-mocks",
   "version": "0.8.1",
   "description": "",
   "main": "index.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emartech/boar-stack-mocks.git"
+    "url": "https://github.com/emartech/boar-server-mocks.git"
   },
-  "author": "",
+  "author": "Emarsys",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/emartech/boar-stack-mocks/issues"
+    "url": "https://github.com/emartech/boar-server-mocks/issues"
   },
-  "homepage": "https://github.com/emartech/boar-stack-mocks",
+  "homepage": "https://github.com/emartech/boar-server-mocks",
   "dependencies": {
-    "boar-stack": "0.8.0",
+    "boar-server": "1.0.0",
     "lodash": "3.9.3",
     "sinon": "1.14.1"
   }

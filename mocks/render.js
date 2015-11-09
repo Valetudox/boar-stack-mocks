@@ -1,6 +1,6 @@
 'use strict';
 
-var hooks = require('boar-stack').middlewares.hook;
+var hooks = require('boar-server').middlewares.hook;
 
 var context;
 var renderArguments;
