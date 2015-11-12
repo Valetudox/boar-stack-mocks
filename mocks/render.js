@@ -20,7 +20,7 @@ module.exports =  {
       if (this && this.render) {
         originalRender = this.render;
         context = this;
-        this.render = function* (path, data) {
+        this.render = function(path, data) {
           renderArguments = {path: path, data: data};
           context.body = "RENDER STUB";
           context.type = "html";
