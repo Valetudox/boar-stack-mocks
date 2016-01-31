@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release-patch": "npm version patch -m 'chore(package): update version to %s'",
-    "release-minor": "npm version minor -m 'chore(package): update version to %s'",
-    "release-major": "npm version major -m 'chore(package): update version to %s'"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emartech/boar-mocks-server.git"
+    "url": "git+https://github.com/emartech/boar-mocks-server.git"
+  },
+  "release": {
+    "verifyConditions": {
+      "path": "./node_modules/semantic-release/dist/lib/plugin-noop.js"
+    }
   },
   "author": "Emarsys",
   "license": "ISC",
@@ -22,5 +25,8 @@
     "boar-server": "2.2.1",
     "lodash": "3.9.3",
     "sinon": "1.14.1"
+  },
+  "devDependencies": {
+    "semantic-release": "4.3.5"
   }
 }
