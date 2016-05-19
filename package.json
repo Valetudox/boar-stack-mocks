@@ -21,11 +21,9 @@
   },
   "homepage": "https://github.com/emartech/boar-mocks-server",
   "dependencies": {
+    "boar-server": "2.5.0",
     "lodash": "4.6.1",
     "sinon": "1.17.3"
-  },
-  "peerDependencies": {
-    "boar-server": "*"
   },
   "devDependencies": {
     "semantic-release": "4.3.5"
