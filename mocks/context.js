@@ -20,6 +20,7 @@ var FakeContext = function() {
     set: sinon.stub()
   };
   this.body = {};
+  this.query = {};
 
   this.validatedData = {};
 };
