@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/emartech/boar-mocks-server",
   "dependencies": {
-    "lodash": "4.17.10",
     "sinon": "1.17.3"
   },
   "peerDependencies": {
