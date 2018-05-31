@@ -1,6 +1,5 @@
 'use strict';
 
-var _ = require('lodash');
 var sinon = require('sinon');
 
 
@@ -34,7 +33,7 @@ FakeContext.prototype = {
 
 
   getLastRenderArgs: function() {
-    return _.last(this._renderArgs);
+    return this._renderArgs[this._renderArgs.length - 1];
   },
 
 
