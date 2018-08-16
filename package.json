@@ -10,7 +10,7 @@
     "url": "git+https://github.com/emartech/boar-mocks-server.git"
   },
   "author": "Emarsys",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/emartech/boar-mocks-server/issues"
   },
