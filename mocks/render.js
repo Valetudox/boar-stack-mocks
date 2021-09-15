@@ -1,10 +1,10 @@
 'use strict';
 
-var hooks = require('boar-server').middlewares.hook;
+let hooks = require('boar-server').middlewares.hook;
 
-var context;
-var renderArguments;
-var originalRender;
+let context;
+let renderArguments;
+let originalRender;
 
 module.exports =  {
 
@@ -21,9 +21,12 @@ module.exports =  {
         originalRender = this.render;
         context = this;
         this.render = function(path, data) {
-          renderArguments = {path: path, data: data};
-          context.body = "RENDER STUB";
-          context.type = "html";
+          return new Promise(resolve => {
+            renderArguments = {path: path, data: data};
+            context.body = "RENDER STUB";
+            context.type = "html";
+            resolve(context);
+          });
         };
       }
     });

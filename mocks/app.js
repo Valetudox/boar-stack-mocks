@@ -1,8 +1,8 @@
 'use strict';
 
-var sinon = require('sinon');
+let sinon = require('sinon');
 
-var AppMock = function() {
+let AppMock = function() {
   this.use = sinon.stub();
 };
 

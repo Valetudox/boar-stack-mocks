@@ -1,8 +1,8 @@
 'use strict';
 
-var sinon = require('sinon');
+let sinon = require('sinon');
 
-var RouterMock = function() {
+let RouterMock = function() {
   this.get = sinon.stub();
   this.post = sinon.stub();
   this.put = sinon.stub();

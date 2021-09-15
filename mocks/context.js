@@ -1,9 +1,9 @@
 'use strict';
 
-var sinon = require('sinon');
+let sinon = require('sinon');
 
 
-var FakeContext = function() {
+let FakeContext = function() {
   this._renderArgs = [];
   this.status = 200;
   this.id = 'some-request-id';
@@ -28,7 +28,10 @@ var FakeContext = function() {
 FakeContext.prototype = {
 
   render: function() {
-    this._renderArgs.push(arguments);
+    return new Promise(resolve => {
+      this._renderArgs.push(arguments);
+      resolve(this._renderArgs);
+    });
   },
 
 
